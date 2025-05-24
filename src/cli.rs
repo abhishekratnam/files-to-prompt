@@ -8,7 +8,7 @@ use std::sync::atomic::{AtomicUsize, Ordering};
 
 static GLOBAL_INDEX: AtomicUsize = AtomicUsize::new(1);
 
-// Make the function public so it can be called from main.rs
+
 pub fn run() -> io::Result<()> {
     // Fix the -0 flag by using the more verbose Arg construction instead of arg! macro
     let matches = command!()
