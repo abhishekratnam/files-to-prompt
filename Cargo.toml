@@ -1,0 +1,28 @@
+[package]
+name = "files-to-prompt"
+version = "0.6.0"
+description = "Concatenate a directory full of files into a single prompt for use with LLMs"
+authors = ["Simon Willison"]
+license = "Apache-2.0"
+readme = "README.md"
+edition = "2021"
+repository = "https://github.com/simonw/files-to-prompt"
+homepage = "https://github.com/simonw/files-to-prompt"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive", "cargo"] }  # Rust's equivalent to Python's "click"
+glob = "0.3.1"          # For gitignore pattern matching (replacing fnmatch)
+atty = "0.2"            # For detecting TTY
+
+[dev-dependencies]
+assert_cmd = "2.0"      # For testing CLI applications
+predicates = "2.0"      # Useful for test assertions
+tempfile = "3.3"        # For creating temporary directories
+regex = "1.7"           # For extracting data with regex
+[lib]
+name = "files_to_prompt"  # Use underscores for the library name
+path = "src/lib.rs"       # Point to the library entry point
+
+[[bin]]
+name = "files-to-prompt"  # Keep hyphens for the binary name
+path = "src/main.rs"
