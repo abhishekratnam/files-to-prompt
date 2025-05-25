@@ -1,12 +1,11 @@
 # files-to-prompt
 
 [![Crates.io](https://img.shields.io/crates/v/files-to-prompt)](https://crates.io/crates/files-to-prompt)
-[![Build Status](https://github.com/yourusername/files-to-prompt/workflows/CI/badge.svg)](https://github.com/yourusername/files-to-prompt/actions)
 [![License](https://img.shields.io/crates/l/files-to-prompt)](LICENSE)
 
 Concatenate a directory full of files into a single prompt for use with LLMs.
 
-This is a Rust implementation of the [Python files-to-prompt tool](https://github.com/simonw/files-to-prompt) by Simon Willison.
+This is a Rust implementation of the [python files-to-prompt tool](https://github.com/simonw/files-to-prompt) by Simon Willison.
 
 ## Installation
 
@@ -244,6 +243,7 @@ Run tests:
 ```bash
 cargo test
 ```
+<img width="1041" alt="Screenshot 2025-05-25 at 1 13 22 AM" src="https://github.com/user-attachments/assets/46d13138-c9bb-4856-b444-3a9f71896de5" />
 
 ## License
 
